@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">screenshot-testing-android-demo</string>
+
+    <string name="details_info.market_hours.closed">Κλειστή</string>
+    <string name="details_info.market_hours.open">Ανοιχτή</string>
+    <string name="details_info.market_hours.market_is">Η αγορά είναι</string>
+    <string name="details_info.market_hours.closure">3 ώρες μέχρι το κλείσιμο</string>
+
+</resources>

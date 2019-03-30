@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Market Hours View -->
+    <dimen name="market_hours_current_time_line_width">2dp</dimen>
+    <dimen name="market_hours_current_time_line_height">18dp</dimen>
+    <dimen name="market_hours_time_bar_height">6dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_tiny">11sp</dimen>
+
+</resources>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">screenshot-testing-android-demo</string>
+
+    <string name="details_info.market_hours.closed">Closed</string>
+    <string name="details_info.market_hours.open">Open</string>
+    <string name="details_info.market_hours.market_is">Market is</string>
+    <string name="details_info.market_hours.closure">3 hours until closure</string>
+
 </resources>
