@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/market_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:text="@string/details_info.market_hours.market_is"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Market is" />
+
+    <TextView
+        android:id="@+id/market_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:paddingStart="4dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="1dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_tiny"
+        app:layout_constraintBaseline_toBaselineOf="@id/market_text"
+        app:layout_constraintStart_toEndOf="@id/market_text"
+        tools:text="Closed" />
+
+    <TextView
+        android:id="@+id/closure_text"
+        android:textSize="@dimen/text_size_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/grey"
+        android:text="@string/details_info.market_hours.closure"
+        app:layout_constraintBaseline_toBaselineOf="@id/market_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="3 hours until closure" />
+
+    <View
+        android:id="@+id/time_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/market_hours_time_bar_height"
+        android:layout_marginTop="17dp"
+        android:background="@color/lightGrey"
+        app:layout_constraintTop_toBottomOf="@id/market_text" />
+
+    <TextView
+        android:id="@+id/hour_0"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@id/hour_2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_bar" />
+
+    <TextView
+        android:id="@+id/hour_2"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_4"
+        app:layout_constraintStart_toEndOf="@id/hour_0" />
+
+    <TextView
+        android:id="@+id/hour_4"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_6"
+        app:layout_constraintStart_toEndOf="@id/hour_2" />
+
+    <TextView
+        android:id="@+id/hour_6"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_8"
+        app:layout_constraintStart_toEndOf="@id/hour_4" />
+
+    <TextView
+        android:id="@+id/hour_8"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_10"
+        app:layout_constraintStart_toEndOf="@id/hour_6" />
+
+    <TextView
+        android:id="@+id/hour_10"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_12"
+        app:layout_constraintStart_toEndOf="@id/hour_8" />
+
+    <TextView
+        android:id="@+id/hour_12"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_14"
+        app:layout_constraintStart_toEndOf="@id/hour_10" />
+
+    <TextView
+        android:id="@+id/hour_14"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_16"
+        app:layout_constraintStart_toEndOf="@id/hour_12" />
+
+    <TextView
+        android:id="@+id/hour_16"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_18"
+        app:layout_constraintStart_toEndOf="@id/hour_14" />
+
+    <TextView
+        android:id="@+id/hour_18"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_20"
+        app:layout_constraintStart_toEndOf="@id/hour_16" />
+
+    <TextView
+        android:id="@+id/hour_20"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_22"
+        app:layout_constraintStart_toEndOf="@id/hour_18" />
+
+    <TextView
+        android:id="@+id/hour_22"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toStartOf="@id/hour_24"
+        app:layout_constraintStart_toEndOf="@id/hour_20" />
+
+    <TextView
+        android:id="@+id/hour_24"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24"
+        app:layout_constraintBaseline_toBaselineOf="@id/hour_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/hour_22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
