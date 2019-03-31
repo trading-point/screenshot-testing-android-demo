@@ -74,7 +74,8 @@ open class ScreenshotTestBase {
 
     protected fun getViewConfigCombos(height: Int): List<TestDevice> {
         val devices = ArrayList<TestDevice>()
-        val languages = arrayOf("en", "el")
+        // here we can add more languages but in order to reduce the number of screenshots for the PR demo we removed 'el'
+        val languages = arrayOf("en")
 
         devices.addAll(generateCombos(languages, TestDevice(DEVICE_1.width, height), false))
         devices.addAll(generateCombos(languages, TestDevice(DEVICE_4.width, height), true))
