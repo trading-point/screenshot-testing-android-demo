@@ -4,9 +4,6 @@ import android.os.Bundle
 import androidx.test.runner.AndroidJUnitRunner
 import com.facebook.testing.screenshot.ScreenshotRunner
 
-/**
- * Created by Christoforos Filippou on 30/03/2019
- */
 class ScreenshotTestRunner: AndroidJUnitRunner() {
 
     override fun onCreate(args: Bundle) {

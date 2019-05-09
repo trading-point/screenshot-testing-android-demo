@@ -3,11 +3,13 @@ package com.xm.screenshot.testing
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import com.xm.MarketHoursView
 import org.junit.Before
+import org.junit.Ignore
 import org.junit.Test
 
 /**
  * Created by Christoforos Filippou on 30/03/2019
  */
+@Ignore
 class TestMarketHoursView : ScreenshotTestBase() {
 
     private lateinit var combos: List<TestDevice>
