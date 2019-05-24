@@ -12,34 +12,27 @@ import kotlinx.android.synthetic.main.market_hours_view.view.*
 import java.util.concurrent.TimeUnit
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * A custom view for representing the time sessions within the day where the market is open, the current time and the state of the market(open closed)
+ */
 class MarketHoursView @JvmOverloads constructor(context: Context,
                                                 attrs: AttributeSet? = null,
                                                 defStyleAttr: Int = 0) : ConstraintLayout(context, attrs, defStyleAttr) {
 
+    /**
+     * Holds the hour and minutes
+     */
     data class DisplayedTime(val hour: Int, val minute: Int)
 
+    /**
+     * Holds the open and close time of a session
+     */
     data class MarketHoursSession(val marketOpenTime: DisplayedTime,
                                   val marketCloseTime: DisplayedTime)
 
+    /**
+     * Holds the time sessions, current time and the state of the market(open/closed)
+     */
     data class MarketDisplayInfo(val marketHoursSessions: List<MarketHoursSession>,
                                  val currentTime: DisplayedTime,
                                  val isOpen: Boolean)
